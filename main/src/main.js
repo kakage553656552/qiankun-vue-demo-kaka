@@ -33,6 +33,13 @@ registerMicroApps([
     activeRule: '/app-vue-history',
     props: { data : store }
   },
+  { 
+    name: 'cui2',
+    entry: 'http://localhost:3333', 
+    container: '#appContainer', 
+    activeRule: '/cui2',
+    props: { data : { store, router } }
+  },
 ]);
 
 start();
